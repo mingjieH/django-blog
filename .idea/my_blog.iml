@@ -18,6 +18,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="learn" />
     <orderEntry type="module" module-name="PythonScript" />
+    <orderEntry type="module" module-name="django_blog" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

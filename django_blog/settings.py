@@ -133,3 +133,5 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+# MEDIA_ROOT = '/static/'
+# MEDIA_URL = '/static/'

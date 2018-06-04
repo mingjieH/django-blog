@@ -2,7 +2,7 @@
 {% load custom_filter %}
 
 {% block title %}
-    <title>{{ article.title }} - 日月化木</title>
+    <title>{{ article.title }} - 黄豆</title>
 {% endblock %}
 
 {% block meta %}
@@ -38,7 +38,6 @@
                         <time>{{ article.date_time }}</time>
                     </a></li>
                     <li><a href="#"><i class="el-user"></i>{{ article.author }}</a></li>
-                    <li><a href="#Coon" title="转到评论"><i class="el-comment"></i>{{ article.comment }}条</a></li>
                     <li><a title="已有 {{ article.view }} 次浏览"><i class="el-eye-open"></i>{{ article.view }}</a></li>
                 </ul>
             </div>
@@ -57,33 +56,33 @@
             </div>
             <!--分享-->
             <div class="article-fx"><a class="fx-btn img-circle" href="javascript:;">分享</a>
-                <div class="bd-fx arc-bdfx">
-                    <i class="el-remove fx-close"></i>
-                    <ul class="bdsharebuttonbox">
-                        <li><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></li>
-                        <li><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
-                        <li><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></li>
-                        <li><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a></li>
-                    </ul>
-                    <script>window._bd_share_config = {
-                        "common": {
-                            "bdSnsKey": {},
-                            "bdText": "",
-                            "bdMini": "2",
-                            "bdMiniList": false,
-                            "bdPic": "",
-                            "bdStyle": "1",
-                            "bdSize": "32"
-                        }, "share": {}
-                    };
-                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
-                </div>
+{#                <div class="bd-fx arc-bdfx">#}
+{#                    <i class="el-remove fx-close"></i>#}
+{#                    <ul class="bdsharebuttonbox">#}
+{#                        <li><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></li>#}
+{#                        <li><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>#}
+{#                        <li><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></li>#}
+{#                        <li><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a></li>#}
+{#                    </ul>#}
+{#                    <script>window._bd_share_config = {#}
+{#                        "common": {#}
+{#                            "bdSnsKey": {},#}
+{#                            "bdText": "",#}
+{#                            "bdMini": "2",#}
+{#                            "bdMiniList": false,#}
+{#                            "bdPic": "",#}
+{#                            "bdStyle": "1",#}
+{#                            "bdSize": "32"#}
+{#                        }, "share": {}#}
+{#                    };#}
+{#                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>#}
+{#                </div>#}
             </div>
             <!--END 分享-->
-            <div class="cyReward " style="text-align: center">
-                <div id="cyReward" role="cylabs" data-use="reward" sid="{{ source_id }}"></div>
-
-            </div>
+{#            <div class="cyReward " style="text-align: center">#}
+{#                <div id="cyReward" role="cylabs" data-use="reward" sid="{{ source_id }}"></div>#}
+{##}
+{#            </div>#}
 
             <hr>
 
@@ -100,14 +99,14 @@
                 </ul>
             </div>
 
-            <div class="cyEmoji" style="text-align: center">
-                <div id="cyEmoji" role="cylabs" data-use="emoji" sid="{{ source_id }}"></div>
-            </div>
+{#            <div class="cyEmoji" style="text-align: center">#}
+{#                <div id="cyEmoji" role="cylabs" data-use="emoji" sid="{{ source_id }}"></div>#}
+{#            </div>#}
 
         </article>
 
         <!--评论表单-->
-        {% include "blog/message.html" %}
+{#        {% include "blog/message.html" %}#}
 
 
         <script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
